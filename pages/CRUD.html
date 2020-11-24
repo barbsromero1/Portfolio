@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="../img/BR-42.png" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>Bárbara Romero Ortiz CRUD</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    
+
+    <!--Top NavBar-->
+    <div class="container-fluid"> 
+      <div class="row borer" id="top-navbar">
+        <div class="col">
+          <div class="d-flex justify-content-end">
+  
+            <a class=" p-2 li-ic" href="https://linkedin.com/in/barbara-romero-287504195" target = _blank>
+              <i class="fab fa-linkedin-in "> </i>
+            </a>
+  
+            <a class="p-2 ins-ic" href = "https://instagram.com/barbs_ro" target = _blank>
+              <i class="fab fa-instagram"> </i>
+            </a>
+  
+            <a class="m-1 p-1 sing-btn " href="#" data-toggle="modal" data-target="#signInModal" id="SingIn"> SingIn</a>
+
+            <a class="m-1 p-1 sing-btn d-none" href="#" id="logout"> LogOut</a>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Navbar-->
+    <nav class="navbar navbar-light navbar-1">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="../index.html">Home</a>
+  
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent15"
+          aria-controls="navbarSupportedContent15"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/CV.html">CV</a>
+            </li>
+
+            <li class="nav-item d-none" id="CRUD-nav">
+              <a class="nav-link" href="../pages/CRUD.html">CRUD</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/portafolio.html">Portafolio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/Contact.html">Contacto</a>
+            </li>
+          </ul>
+          <!-- Links -->
+        </div>
+        <!-- Collapsible content -->
+      </nav>
+    <!-- Nav Bar Ends Here-->
+
+    <!-- Modal  Sign In-->
+    <div
+    class="modal fade"
+    id="signInModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog"  role="document">
+      <div class="modal-content ">
+        <div class="modal-header justify-content-center">
+          <h5 class="modal-title h3" id="exampleModalLabel">Iniciar sesión</h5>
+          <button
+            type="button"
+            class="close mx-1"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <br>
+          <form action="" id="login-form">
+            <div class="form-group">
+              <input
+                type="text"
+                id="login-email"
+                class="form-control"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                id="login-password"
+                class="form-control"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <br>
+            <hr>
+            <div class="row"> 
+              <div class="col"> 
+                <button type="submit" class="btn btn-block form-btn-singin">
+                  LogIn
+                </button>
+              </div>
+              <div class="col"> 
+                <button type="button" class="btn btn-primary btn-block" id="googlelogin"> Login with Google </button>
+              </div>
+            </div>
+            <br>  
+            <div class="row"> 
+              <div class="col"> 
+                <a type ="button" class="nav-link btn btn-block form-btn-singin" id= "create-new" href="#" data-toggle="modal" data-target="#signUpModal" >SingUP</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Modal  Sing Up-->
+    <div
+      class="modal fade"
+      id="signUpModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h5 class="modal-title h3" id="exampleModalLabel">Crea una cuenta</h5>
+            <button
+              type="button"
+              class="close mx-1"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" id="singup-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="signup-email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  id="signup-password"
+                  class="form-control"
+                  placeholder="Contraseña"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  id="signup-password-check"
+                  class="form-control"
+                  placeholder="Confirmar contraseña"
+                  required
+                />
+              </div>
+              <p class="alert " id="singUp-error"> </p>
+              <div class=" d-flex justify-content-end"> 
+                <button type="submit" class="btn form-btn-singin ">
+                  Sing Up
+                </button>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron text-center">
+        <div class="col-md-12">
+            <h2 class="principal-port">Agrega, edita y elimina tus proyectos.</h2>
+        </div>
+    </div>
+
+    <div class="container"> 
+        <!--MENÚ CON CATEGORIAS-->
+      <div class="row mt-5">
+        <!-- Grid column -->
+        <div class="col-md-12 d-flex flex-wrap justify-content-center mb-5 h3" >
+          <button
+            type="button"
+            class="btn btn-lg m-0 px-3 py-1 filter"
+            data-rel="all"
+          > TODO
+          </button>
+          <p class=" font-weight-bold mb-0 px-1 py-1">/</p>
+          <button
+            type="button"
+            class="btn btn-flat btn-lg m-0 px-3 py-1 filter"
+            data-rel="categoria-AT"
+          >
+            ARTE
+          </button>
+          <p class="font-weight-bold mb-0 px-1 py-1">/</p>
+          <button
+            type="button"
+            class="btn btn-flat btn-lg m-0 px-3 py-1 filter"
+            data-rel="categoria-PH"
+          >
+            FOTOGRAFIA
+          </button>
+          <p class="font-weight-bold mb-0 px-1 py-1">/</p>
+          <button
+            type="button"
+            class="btn btn-flat btn-lg m-0 px-3 py-1 filter"
+            data-rel="categoria-VG"
+          >
+            VIDEOJUEGOS
+          </button>
+        </div>
+        <!--MENÚ CON CATEGORIAS TERMINA -->
+      </div>
+
+      <div class="row my-3 justify-content-end">
+        <a class="btn badge-pill px-3 smooth-scroll" href="#AddNew" role="button">
+          Agregar Proyecto
+        </a>
+      </div>
+
+      <div id="rowCrud" class="row">
+          <div class="container">   
+              <div class="row"> 
+                  <!--VISTA PROYECTOS-->
+                  <div class="gallery mb-5" id="gallery">
+                    <div class="display" id="proyects-container">
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+
+    <section id="AddNew" class=" ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="container">   
+            <div class="card" id="cardNewP">
+              <div class="card-body">
+                <form id="proyect-form">
+                  <div class="row">
+                    <div class="col order-1">
+                      <h1 class="h4">Agregar Proyecto</h1>
+                    </div>
+                    <div class="col order-2">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          id="proyect-title"
+                          class="form-control"
+                          class="Proyect Title"
+                          placeholder="Título del proyecto"
+                          autofocus
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="container"> 
+                    <div class="row ">
+                      <div class="col-sm col-12 mr-1"> 
+                        <div class="row justify-content-end "> 
+                          <div class="form-group">
+                            <div>
+                              <input
+                                class="file-upload-input"
+                                type="file"
+                                name="myFile "
+                                id="myFile"
+                              />
+                              <button
+                                class="file-upload-button btn-circle btn-md"
+                                type="button"
+                              >
+                                <i class="fas fa-cloud-upload-alt"></i>
+                              </button>
+                              <span class="file-upload-label"> </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group">
+                            <textarea
+                              id="proyect-description"
+                              rows="3"
+                              class="form-control"
+                              placeholder="Descripción del proyecto"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-6 col-order-1">
+                      <div class="form-group">  
+                        <select class="custom-select mr-sm-2" class="form-control" class="Proyect Categoria" id="proyect-categoria" >
+                          <option selected >Selecciona una categoria...</option>
+                          <option value="categoria-PH" >Fotografia</option>
+                          <option value="categoria-VG" >Videojuegos</option>
+                          <option value="categoria-AT" >Arte</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-order-1">
+                      <div class="form-group">  
+                        <button class="btn " id="btn-proyect-form">
+                          <a class="smooth-scroll" href="#proyects-container" role="button">
+                            Guardar
+                          </a>
+                        </button>
+                        <button type="button" class="btn btn-cancel" id ="btn-cancel">
+                          <a href="#proyects-container" class="smooth-scroll" role="button"></a>
+                          Cancelar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+    <section id="CRUD-Safe" class=" ">
+      <div class="container"> 
+        <div class="row justify-content-center">
+          <h5 class="text-center">Contenido y funciones solo disponible para administradores</h2>
+      </div>
+      </div>
+      
+    </section>
+    
+    <!-- Footer -->
+    <footer  id ="footer" >
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2020
+        <a type="footer-name" href="index.html"> BárbaraRomero</a>
+        Derechos reservados
+        <!--Linkedin -->
+        <a class="li-ic pl-2" href="https://linkedin.com/in/barbara-romero-287504195" target = _blank>
+            <i class="fab fa-linkedin-in fa-lg  mr-2"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic" href = "https://instagram.com/barbs_ro" target = _blank>
+            <i class="fab fa-instagram fa-lg " > </i>
+          </a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optionals
+    var firebaseConfig = {
+        apiKey: "AIzaSyDS_og4atJ7kDMxb20BXX17lpUE3xak-Oc",
+        authDomain: "bro-portfolio.firebaseapp.com",
+        databaseURL: "https://bro-portfolio.firebaseio.com",
+        projectId: "bro-portfolio",
+        storageBucket: "bro-portfolio.appspot.com",
+        messagingSenderId: "681939426737",
+        appId: "1:681939426737:web:388f795c26908c63d03190",
+        measurementId: "G-TG6CHP8S5S"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore(); 
+
+    </script>
+
+    <!-- Optional JavaScript -->
+    
+    
+    <!-- scriptsfro nav bar hammburger style -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+    <script src="../scripts/index.js"></script>
+    <script src="../scripts/auth.js">  </script>
+  </body>
+</html>

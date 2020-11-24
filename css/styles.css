@@ -1,0 +1,629 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Raleway:ital,wght@0,400;1,300&display=swap");
+
+.navbar {
+  background-color: #afd5d4;
+  font-family: "Raleway", sans-serif;
+}
+a .navbar-brand {
+  background-color: none;
+}
+.dropdown-menu {
+  border: none;
+  background-color: #afd5d4;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.jumbotron {
+  background-color: #5eaaa8;
+  color: white;
+  margin: 0px;
+}
+h1 {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 70px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 55px;
+  }
+}
+
+p.lead {
+  text-align: center;
+  margin: 30px 30px 30px;
+  font-family: "Raleway", sans-serif;
+}
+a.stretched-link {
+  text-decoration: none;
+}
+
+.col-sm-6,
+h2,
+h3,
+p,
+ul {
+  font-family: "Raleway", sans-serif;
+}
+
+
+.contact-section .form .btn-floating {
+  left: 3px;
+}
+
+.news-tile .card-title {
+  position: absolute;
+  bottom: 15px;
+  left: 40px;
+}
+
+.rgba-stylish-strong {
+  background-color: rgba(62, 69, 81, 0.5);
+}
+
+.fa-paper-plane {
+  color: #5eaaa8;
+}
+.fa-github {
+  color: #0c7189;
+}
+.col-lg-4 {
+  background-color: #5eaaa8;
+  color: white;
+}
+.map-container {
+  height: 200px;
+  position: relative;
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.col-sm-4 {
+  background-color: #5eaaa8;
+  color: white;
+}
+.col-sm-8 {
+  background-color: #afd5d4;
+}
+h2 .pt-2 .border-bottom,
+.font-weight-bold {
+  color: #0c7189;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+h3 {
+  font-weight: bolder;
+  color: #0c7189;
+}
+.border-right {
+  border-right-style: dotted;
+}
+.col-sm-8 li dt,
+i {
+  color: #0c7189;
+}
+
+td a {
+  color: white;
+}
+a[type="footer-name"] {
+  color: black;
+}
+
+.row-art-Photo {
+  color: back;
+}
+
+h2 {
+  color: #0c7189;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 80px;
+  margin: 40px 15px 0px 20px;
+}
+.photo-1 {
+  margin: 45px 40px 40px 40px;
+}
+@media (max-width: 900px) {
+  .photo-1 {
+    margin: 20px 0px;
+  }
+}
+.desc-img {
+  margin: 250px 70px;
+  font-size: 20px;
+}
+@media (max-width: 823px) {
+  .desc-img {
+    margin: 20px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 823px) and (min-width: 1200px) {
+  .desc-img {
+    margin: 150px 0px 0px 0px;
+    font-size: 10px;
+  }
+}
+.desc-img-2 {
+  margin: 40px 70px;
+  font-size: 20px;
+}
+@media (max-width: 1200px) {
+  .desc-img-2 {
+    margin: 20px;
+    font-size: 15px;
+  }
+}
+.desc-img-3 {
+  margin: 40px 0px 0px 70px;
+  font-size: 20px;
+}
+@media (max-width: 1200px) {
+  .desc-img-3 {
+    margin: 10px;
+    font-size: 15px;
+  }
+}
+.principal-port {
+  color: white;
+  font-family: "Maven Pro", sans-serif;
+}
+@media (max-width: 600px) {
+  .principal-port {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+}
+
+.title-fish {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 80px;
+}
+@media (max-width: 600px) {
+  .title-fish {
+    font-size: 30px;
+  }
+}
+
+blockquote {
+  margin: 30px;
+  font-style: italic;
+}
+@media (min-width: 600px) {
+  blockquote {
+    margin: 83px 50px;
+  }
+}
+
+#last-text-port {
+  margin: 0;
+  padding: 10px;
+  background-color: #f0ebe4;
+}
+.port-click {
+  background-color: #f0ebe4;
+}
+
+.detail {
+  color: #0c7189;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.detail-quote{
+  color: #0c7189;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 600px) {
+  .detail-quote{
+    color: #0c7189;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+  }
+}
+.cite{
+  font-family: "Raleway", sans-serif;
+}
+
+.manos-sin-color {
+  background-color: white;
+}
+#descripcion {
+  padding: 0;
+}
+.final-text {
+  background: #5eaaa8;
+  color: white;
+  padding: 50px;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+}
+
+@media (max-width: 600px) {
+  .final-text {
+    font-size: 15px;
+  }
+}
+
+.euritmia {
+  justify-content: center;
+}
+
+i {
+  font-family: "Raleway", sans-serif;
+}
+a.text-center {
+  text-decoration: none;
+  align-content: center;
+}
+
+/* jubotron paguina principal*/
+.special {
+  margin-top: -190px;
+}
+
+@media (max-width: 780px) {
+  .special {
+    margin-top: -165px;
+  }
+}
+
+.jumbotron-1 {
+  height: 380px;
+}
+
+
+/* css para GRID  de portafolio */
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+}
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+.gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.gallery .card {
+  break-inside: avoid;
+}
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 800px) {
+  .gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+}
+button.close {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  padding-right: 1rem;
+  padding-top: 0.6rem;
+}
+
+
+/* css para GRID  de targetas */
+
+.proyects-container {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%; 
+}
+.proyects-container .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease; 
+}
+.proyects-container .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); 
+}
+
+@media (max-width: 450px) {
+  .proyects-containery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+}
+
+button.close {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  padding-right: 1rem;
+  padding-top: .6rem;
+}
+
+.card-body i{
+  color: white;
+}
+
+.btn-circle.btn-md { 
+  width: 50px; 
+  height: 50px; 
+  border-radius: 25px; 
+  font-size: 20px; 
+  background: #5eaaa8;
+  border: #5eaaa8;
+  color: -internal-light-white;
+  -webkit-appearance: none; 
+  color: -internal-light-dark(white, white);
+  outline:none;
+  
+} 
+
+
+.btn-circle.btn-md:hover { 
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
+} 
+
+
+.btn.filter{
+  background: transparent;
+  color: #0c7189; 
+  box-shadow: none;
+}
+.filter:hover{
+  background-color: #0c7189;
+  color: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
+}
+.filter:hover:active{
+  background-color: #0c7189;
+  color: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
+}
+
+
+/* css para GRID Form Group modal */
+.form-group {
+  height: 100%;
+  width: 100%;
+}
+
+.badge-pill {
+  background-color:#0c7189;
+  border: none; 
+  color: white; 
+}
+
+.badge-pill:hover {
+  color: white; 
+}
+.badge-pill:active {
+  border:none ; 
+}
+
+#btn-proyect-form{
+  background-color: #afd5d4;
+  border: none; 
+}
+#btn-proyect-form:hover{
+  background-color: #5eaaa8;
+  border: none; 
+  color: white;
+}
+/* css para GRID  file upload */
+
+.file-upload {
+  display: inline-flex;
+  align-items: center;
+  font-size: 15 px;
+}
+
+.file-upload-input {
+  display: none;
+}
+
+.file-upload-button {
+  -webkit-appearance: none;
+  background: cadetblue;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  padding: 0.5em, 0.8em;
+  color: white;
+  margin-right: 15px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.file-upload-label {
+  max-width: 250px;
+  font-size: 0.9em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.modal button i{
+  color: white; 
+}
+.modal button{
+  align-items: center;
+}
+
+
+/* css para BUTTON  de Nuevo Proyecto */
+
+#AddNew{
+  height: 650px;
+  background-color: #5eaaa8;
+}
+#cardNewP{
+  margin: 50px 70px;
+}
+
+.btn-cancel:hover{
+  background-color:#5eaaa8;
+  color: white;
+}
+
+
+/* css para Log in NavBar */
+#top-navbar{
+  background-color:#afd5d4 ;
+}
+
+/*sing form */
+.sing-btn:hover{
+  color: #0c7189; 
+}
+
+
+/*sing in*/ 
+.form-btn-singin{
+  background-color: #afd5d4;
+  border: none; 
+}
+
+
+/*Plane */ 
+
+.paperAnim{
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.paperPlane{
+  height: 80px; 
+  position: absolute;
+  top: 50%; 
+  left: 0%; 
+}
+
+/* Plane small */
+
+.paperPlane2{
+  height: 10vh; 
+  position: absolute;
+  top: 50%; 
+  left: 0%;
+}
+
+.paperAnim-2{
+  height: 75vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/*Me */ 
+#Me{
+  position: absolute; 
+  height: 700px;
+  top: 0; 
+  left: 180px; 
+
+}
+
+@media (max-width: 767px) {
+  #Me{
+    height: 700px;
+    top: 0; 
+    left: 10px; 
+  }
+
+}
+
+#box-2{
+  position: absolute; 
+  top: 220px; 
+  right: 200px; 
+  height: 400px;
+  width: 220px;
+  border: 10px solid white; 
+}
+
+@media (max-width: 991px) {
+  #box-2 {
+    top: 220px; 
+    right: 150px; 
+  }
+  #box-3 {
+    top: 480px; 
+    right: 150px; 
+  }
+}
+
+#box-3{
+  position: absolute; 
+  top: 480px; 
+  right: 170px; 
+  height: 200px;
+  width: 300px;
+  border: 10px solid white; 
+}
+
+#box{
+  position: relative; 
+  margin-left: 50px;
+  margin-top: 100px;
+  height: 600px;
+  width: 400px;
+  background-color: #afd5d4;
+}
+
+
+/* Crud safe*/
+#CRUD-Safe{
+  height: 9vh;
+}
